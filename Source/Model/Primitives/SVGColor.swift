@@ -101,6 +101,7 @@ public func == (lhs: SVGColor, rhs: SVGColor) -> Bool {
     return lhs.value == rhs.value
 }
 
+@available(iOS 14.0, *)
 extension Color: SerializableAtom {
 
     static func by(name: String) -> Color? {
